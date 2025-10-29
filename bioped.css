@@ -12,7 +12,8 @@
 .lpink2 { color: #cd5ac5; }
 .lpink3 { color: #c340b0; }
 
-.pink { color: #db00ac; }
+.pink { color: #db00ac;}
+.red { color: #a80000;}
 
 .yellow { color: #fff9b7; }
 .white { color: #ffffff; }
@@ -63,6 +64,15 @@ h3 {
     padding: 0 3vw 10px 2vw;
     box-sizing: border-box;
     margin: 0;
+}
+
+h4 {
+    color: #635dd0;
+    font-size: 2.5vw;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 0 10px;
 }
 
 /* body */
@@ -194,6 +204,7 @@ nav {
     word-spacing: 6vw;
     background-color: #000;
     padding: 10px 0;
+    z-index: 10;
 }
 
 a {
@@ -371,4 +382,96 @@ li {
     .rectangleContactRight {
         margin-top: 0;
     }
+}
+
+/* Storefront */
+.storefront {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.product-card {
+    color: #eee;
+    border-radius: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 1rem;
+    width: 290px;
+}
+
+.product-card, .product-card.feature {
+    border-color: #000000;
+    border-width: 5px;
+    border-style: solid;
+    background-color: #191919;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px whitesmoke;
+}
+
+/* Products */
+.product-card.feature {
+    width: 80%;
+    max-width: 80%;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.product-card.feature .feature-img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.product-img {
+    max-height: 200px;
+    align-items: center;
+    object-fit:cover;
+
+    border-width: 5px;
+    border-color: #000;
+    border-style: solid;
+}
+
+/* Product row for bottom two cards */
+.product-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+}
+
+.product-img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.price {
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 1.2em;
+    margin-top: 0.5rem;
+}
+
+.order-btn {
+    background-color: #ff00aa;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 0.6rem 1.2rem;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.order-btn:hover {
+    background-color: #ff33cc;
 }

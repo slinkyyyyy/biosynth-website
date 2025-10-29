@@ -1,99 +1,89 @@
 <!DOCTYPE html>
-<html lang ="en">
-    <head>
-        <meta charset="utf-8">
-            <title>
-                Biosynth Pedals :: Product
-            </title>
-            <link rel="stylesheet" href="bioped.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="Description" content="Biosynth Pedals product page that showcases 3 main products: biowatch, plug&play, and pedals">
-    </head>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Biosynth Music Co :: Store</title>
+    <link rel="stylesheet" href="bioped.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Biosynth Music Co storefront for pedals, plug & play, and biowatch products.">
+</head>
 
-    <body>
-        <header>
-            <a href="index.html">
-                <h1 class="float">
-                    <span>B</span>
-                    <span>I</span>
-                    <span>O</span>
-                    <span>S</span>
-                    <span>Y</span>
-                    <span>N</span>
-                    <span>T</span>
-                    <span>H</span>
-                </h1>
-            </a>
-            <h3>
-                <span>y</span>
-                <span>o</span>
-                <span>u</span>
-                <span> </span>
-                <span>a</span>
-                <span>r</span>
-                <span>e</span>
-                <span> </span>
-                <span>t</span>
-                <span>h</span>
-                <span>e</span>
-                <span> </span>
-                <span>p</span>
-                <span>e</span>
-                <span>d</span>
-                <span>a</span>
-                <span>l</span>
-            </h3>
-        </header>
+<body>
+    <header>
+        <a href="index.html">
+            <h1 class="float">
+                <span>B</span><span>I</span><span>O</span><span>S</span><span>Y</span><span>N</span><span>T</span><span>H</span>
+            </h1>
+        </a>
 
-        <nav>
-            <span><a href="bp_product.html">PRODUCT</a></span>
-            <span><a href="bp_about.html">ABOUT</a></span>
+        <h3>
+            <span>y</span><span>o</span><span>u</span><span> </span>
+            <span>a</span><span>r</span><span>e</span><span> </span>
+            <span>t</span><span>h</span><span>e</span><span> </span>
+            <span>p</span><span>e</span><span>d</span><span>a</span><span>l</span>
+        </h3>
+    </header>
+
+    <nav>
+        <span><a href="bp_product.html">PRODUCT</a></span>
+        <span><a href="bp_about.html">ABOUT</a></span>
+            <!--
             <span><a href="bp_events.html">EVENTS</a></span>
             <span><a href="bp_contact.html">CONTACT</a></span>
-        </nav>
+            -->
+    </nav>
 
-        <main>
-            <div class="container">
-                <video src="ped.mov" class="video" controls poster="phold_pedal.jpg">
-                    <p>Unsupported video tag.</p>
-                </video>
-                <div class="rectangle">
-                    <h2>
-                        <span class=pink>Pedals</span><br>Choose one of many <span class=yellow>digital</span> or <span class=yellow>analog</span> pedals, custom made for optional input from biowatches.
-                    </h2>
+   <main>
+    <section class="storefront">
+
+        <!-- Featured Product -->
+        <div class="product-card feature">
+            <img src="ben_watch.png" alt="Biowatch" class="feature-img">
+            <div class="product-info">
+                <h4><span class="pink">BioSynth MIDI Watch</span></h4>
+                <p>Motion-based MIDI controller that lets you use wrist movement to control synths, effects pedals, DJ software, lighting/visuals, DAWs and more!</p>
+                <p class="price"><s class ="red">$250</s>&nbsp&nbsp$200</p>
+                <button class="order-btn">Coming Soon...</button>
+            </div>
+        </div>
+
+        <!-- Additional Products -->
+        <div class="product-row">
+
+            <div class="product-card">
+                <img src="phold_pedal.jpg" alt="Biosynth Pedal" class="product-img">
+                <div class="product-info">
+                    <h4><span class="pink">Effects Pedals</span></h4>
+                    <p>MIDI-compatible effects pedals that unlock expressive capabilities when paired with the BioSynth watch.</p>
+                    <button class="order-btn">Coming 2026</button>
                 </div>
             </div>
-            <br>
 
-            <div class="container">
-                <div class="rectangle">
-                    <h2>
-                        <span class=pink>Plug & Play</span><br>Transform any <span class=yellow>MIDI controller</span> into a unique, <span class=yellow>playable instrument</span> with no software requirements.
-                    </h2>
-                </div>
-                <video src="pap.mov" class="video" controls poster="phold_midi.jpg">
-                    <p>Unsupported video tag.</p>
-                </video>
-            </div>
-            <br>
-
-            <div class="container">
-                <video src="wat.mov" class="video" controls poster="phold_biowatch.jpg">
-                    <p>Unsupported video tag.</p>
-                </video>
-                <div class="rectangle">
-                    <h2>
-                        <span class=pink>Biowatch</span><br>Become the pedal with a <span class=yellow>Biowatch</span>, which allows <span class=yellow>hands-free control</span> over compatible guitar pedals in real time.
-                    </h2>
+            <div class="product-card">
+                <img src="phold_midi.jpg" alt="Plug and Play device" class="product-img">
+                <div class="product-info">
+                    <h4><span class="pink">The BioSynth</span></h4>
+                    <p>Our flagship synthesizer, designed to be easy to use and fun to perform when paired with a MIDI controller such as the BioSynth Watch.</p>
+                    <button class="order-btn">Coming 2026</button>
                 </div>
             </div>
-        </main>
 
-        <footer style="margin-top: 15px">
-            Copyright © 2025 Biosynth Music Co<br>
-            <a href="mailto:Bjsheri1@asu.edu">
-                13rodiesheridan@gmail.com
-            </a>
-        </footer>
-    </body>
+            <div class="product-card">
+                <img src="Live.PNG" alt="Biosynth Pedal" class="product-img">
+                <div class="product-info">
+                    <h4><span class="pink">Live Events</span></h4>
+                    <p>Live events coming soon!</p>
+                    <button class="order-btn">Coming 2026</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</main>
+
+    <footer style="margin-top: 20px;">
+        Copyright © 2025 Biosynth Music Co<br>
+        <a href="mailto:13rodiesheridan@gmail.com">13rodiesheridan@gmail.com</a>
+    </footer>
+</body>
 </html>
